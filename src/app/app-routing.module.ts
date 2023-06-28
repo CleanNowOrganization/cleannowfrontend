@@ -10,13 +10,13 @@ const routes: Routes = [
         children: [
             {
                 path: '',
-                redirectTo: 'sample-page',
+                redirectTo: 'home-page',
                 pathMatch: 'full'
             },
             {
-                path: 'sample-page',
-                loadChildren: () => import('./demo/pages/sample-page/sample-page.module').then((module) => module.SamplePageModule)
-            }
+                path: 'home-page',
+                loadChildren: () => import('./cleannow/pages/home-page/home-page.module').then((module) => module.HomePageModule)
+            },
         ]
     },
     {
