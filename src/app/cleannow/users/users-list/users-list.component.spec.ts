@@ -1,21 +1,21 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { SamplePageComponent } from './sample-page.component';
+import { UsersListComponent } from './users-list.component';
 
-describe('SamplePageComponent', () => {
-    let component: SamplePageComponent;
-    let fixture: ComponentFixture<SamplePageComponent>;
+describe('UsersListComponent', () => {
+    let component: UsersListComponent;
+    let fixture: ComponentFixture<UsersListComponent>;
 
     beforeEach(
         waitForAsync(() => {
             TestBed.configureTestingModule({
-                declarations: [SamplePageComponent]
+                declarations: [UsersListComponent]
             }).compileComponents();
         })
     );
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(SamplePageComponent);
+        fixture = TestBed.createComponent(UsersListComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });
