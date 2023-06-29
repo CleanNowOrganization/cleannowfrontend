@@ -13,6 +13,12 @@
     (onNavHeaderMobCollapse)="navMobClick()"
 ></app-nav-bar>
 <div class="pcoded-main-container">
-    
+    <div
+        class="pcoded-content"
+        [ngClass]="{ container: this.nextConfig.layout === 'horizontal' && this.nextConfig.subLayout === 'horizontal-2' }"
+    >
+        <app-breadcrumb></app-breadcrumb>
+        <router-outlet></router-outlet>
+    </div>
 </div>
 <app-configuration></app-configuration>

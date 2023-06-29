@@ -10,12 +10,16 @@ const routes: Routes = [
         children: [
             {
                 path: '',
-                redirectTo: 'home-page',
+                redirectTo: 'home',
                 pathMatch: 'full'
             },
             {
-                path: 'home-page',
+                path: 'home',
                 loadChildren: () => import('./cleannow/pages/home-page/home-page.module').then((module) => module.HomePageModule)
+            },
+            {
+                path: 'required',
+                loadChildren: () => import('./cleannow/pages/required/required.module').then((module) => module.RequiredModule)
             },
         ]
     },

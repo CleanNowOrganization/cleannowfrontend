@@ -23,13 +23,27 @@ export class UserProfileComponent implements OnInit {
     public albums: Array<IAlbum>;
     private subscription: Subscription;
 
+    public transacciones: any[] = [
+        {
+            fecha: '2023-07-01',
+            detalle: 'Pago de servicio',
+            monto: '100.00'
+        },
+        {
+            fecha: '2023-07-02',
+            detalle: 'Compra de producto',
+            monto: '200.00'
+        },
+        // Agrega más transacciones de prueba como quieras
+    ];
+
     constructor(
         private lightbox: Lightbox,
         private lightboxEvent: LightboxEvent,
         private lighboxConfig: LightboxConfig,
         private sanitizer: DomSanitizer
     ) {
-        this.activeTab = 'home';
+        this.activeTab = 'profile';
 
         this.editProfile = false;
         this.editProfileIcon = 'icon-edit';

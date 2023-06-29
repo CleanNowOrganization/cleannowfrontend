@@ -23,7 +23,6 @@ import { ToggleFullScreenDirective } from './theme/shared/full-screen/toggle-ful
 
 /* Menu Items */
 import { NgbButtonsModule, NgbDropdownModule, NgbNavModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
-import { FooterComponent } from './footer/footer.component';
 import { NavigationItem } from './theme/layout/admin/navigation/navigation';
 
 @NgModule({
@@ -42,7 +41,6 @@ import { NavigationItem } from './theme/layout/admin/navigation/navigation';
         NavRightComponent,
         ConfigurationComponent,
         ToggleFullScreenDirective,
-        FooterComponent
     ],
     imports: [
         BrowserModule,
