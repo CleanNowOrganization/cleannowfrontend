@@ -1,21 +1,21 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { HomePageComponent } from './home-page.component';
+import { RequiredComponent } from './required.component';
 
-describe('HomePageComponent', () => {
-  let component: HomePageComponent;
-  let fixture: ComponentFixture<HomePageComponent>;
+describe('RequiredComponent', () => {
+  let component: RequiredComponent;
+  let fixture: ComponentFixture<RequiredComponent>;
 
-  beforeEach(
+  beforeEach(async () => {
     waitForAsync(() => {
       TestBed.configureTestingModule({
-        declarations: [HomePageComponent],
+        declarations: [ RequiredComponent ]
       }).compileComponents();
-    })
-  );
+    });
+  });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomePageComponent);
+    fixture = TestBed.createComponent(RequiredComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

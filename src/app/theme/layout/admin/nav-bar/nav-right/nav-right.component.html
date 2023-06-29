@@ -1,105 +1,5 @@
 <ul class="navbar-nav ml-auto">
     <li>
-        <div class="dropdown" ngbDropdown placement="auto">
-            <a ngbDropdownToggle href="javascript:" data-toggle="dropdown"><i class="icon feather icon-bell"></i></a>
-            <div>
-                <ul class="navbar-nav ml-auto">
-                    <li>
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
-                            <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                                aria-expanded="false" aria-label="Toggle navigation"></button>
-                            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        
-                                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                                    <li class="nav-item active">
-                                        <a class="nav-link" style="margin: auto; color: grey;" href="#">Nosotros <span class="sr-only"></span></a>
-                                    </li>
-                                    <li class="nav-item " >
-                                        <a class="nav-link" style="margin: auto; color: grey;" href="#">Servicios</a>
-                                    </li>
-                                    
-                                </ul>
-                            <li class="nav-item iniciar sesion">
-                                <button class=" nav-link btn btn-outline-success my-2 my-sm-2"  href="#" type="submit">Iniciar Sesion</button>
-                                </li>
-                            </div>
-                        </nav>
-                    </li>
-                </ul>    
-            </div>                    
-            <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right notification">
-                <div class="noti-head">
-                    <h6 class="d-inline-block m-b-0">Notificaciones</h6>
-                    <div class="float-right">
-                        <a href="javascript:" class="m-r-10">marcar como leidas</a>
-                        <a href="javascript:">eliminar</a>
-                    </div>
-                </div>
-                <perfect-scrollbar [style.max-height]="'300px'">
-                    <ul class="noti-body">
-                        <li class="n-title">
-                            <p class="m-b-0">NEW</p>
-                        </li>
-                        <li class="notification">
-                            <div class="media">
-                                <img class="img-radius" src="assets/images/user/avatar-4.jpg" alt="Generic placeholder image" />
-                                <div class="media-body">
-                                    <p>
-                                        <strong>ALI CHI</strong
-                                        ><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>5 min</span>
-                                    </p>
-                                    <p>New ticket Added</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="n-title">
-                            <p class="m-b-0">EARLIER</p>
-                        </li>
-                        <li class="notification">
-                            <div class="media">
-                                <img class="img-radius" src="assets/images/user/avatar-2.jpg" alt="Generic placeholder image" />
-                                <div class="media-body">
-                                    <p>
-                                        <strong>ALEJANDRO ESCOBEDO</strong
-                                        ><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>10 min</span>
-                                    </p>
-                                    <p>Prchace New Theme and make payment</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="notification">
-                            <div class="media">
-                                <img class="img-radius" src="assets/images/user/avatar-1.jpg" alt="Generic placeholder image" />
-                                <div class="media-body">
-                                    <p>
-                                        <strong>Sara Soudein</strong
-                                        ><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>12 min</span>
-                                    </p>
-                                    <p>currently login</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="notification">
-                            <div class="media">
-                                <img class="img-radius" src="assets/images/user/avatar-2.jpg" alt="Generic placeholder image" />
-                                <div class="media-body">
-                                    <p>
-                                        <strong>Joseph William</strong
-                                        ><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>30 min</span>
-                                    </p>
-                                    <p>Prchace New Theme and make payment</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </perfect-scrollbar>
-                <div class="noti-footer">
-                    <a href="javascript:">show all</a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
         <div class="dropdown drp-user" ngbDropdown placement="auto">
             <a href="javascript:" ngbDropdownToggle data-toggle="dropdown">
                 <i class="icon feather icon-user"></i>
@@ -107,24 +7,23 @@
             <div class="dropdown-menu dropdown-menu-right profile-notification" ngbDropdownMenu>
                 <div class="pro-head">
                     <img src="assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image" />
-                    <span>VIVIANA VEGA</span>
+                    <span>Viviana Delgado Vega</span>
                     <a href="javascript:" class="dud-logout" title="Logout">
                         <i class="feather icon-log-out"></i>
                     </a>
                 </div>
                 <ul class="pro-body">
                     <li>
-                        <a href="javascript:" class="dropdown-item"><i class="feather icon-user"></i> PERFIL</a>
+                        <a href="javascript:" class="dropdown-item"><i class="feather icon-user"></i> Perfil</a>
                     </li>
                     <li>
-                        <a href="javascript:" class="dropdown-item"><i class="feather icon-mail"></i> MIS MENSAJES</a>
+                        <a href="javascript:" class="dropdown-item"><i class="feather icon-mail"></i> Mis Mensajes</a>
                     </li>
                     <li>
-                        <a href="javascript:" class="dropdown-item"><i class="feather icon-lock"></i> CERRAR SESION</a>
+                        <a href="javascript:" class="dropdown-item"><i class="feather icon-lock"></i> Cerrar sesion</a>
                     </li>
                 </ul>
             </div>
         </div>
     </li>
-   
 </ul>

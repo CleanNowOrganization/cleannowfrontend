@@ -33,13 +33,21 @@ const NavigationItems = [
         icon: 'feather icon-align-left',
         children: [
             {
-                id: 'home-page',
+                id: 'home',
                 title: 'Home',
                 type: 'item',
-                url: '/home-page',
+                url: '/home',
                 classes: 'nav-item',
                 icon: 'feather icon-sidebar'
-            }
+            },
+            {   
+                id: 'required',
+                title: 'Required',
+                type: 'item',
+                url: '/required',
+                classes: 'nav-item',
+                icon: 'feather icon-user'
+            },
         ]
     }
 ];
