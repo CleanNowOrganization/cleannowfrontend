@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { AlertModule, BreadcrumbModule, CardModule, ModalModule } from './components';
+import { AlertModule, BreadcrumbModule, CardModule, ModalModule, FooterModule } from './components';
 import { DataFilterPipe } from './components/data-table/data-filter.pipe';
 import { TodoListRemoveDirective } from './components/todo/todo-list-remove.directive';
 import { TodoCardCompleteDirective } from './components/todo/todo-card-complete.directive';
@@ -36,7 +36,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
         BreadcrumbModule,
         ModalModule,
         ClickOutsideModule,
-        LightboxModule
+        LightboxModule,
+        FooterModule,
     ],
     exports: [
         CommonModule,
@@ -47,6 +48,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
         CardModule,
         BreadcrumbModule,
         ModalModule,
+        FooterModule,
         DataFilterPipe,
         TodoListRemoveDirective,
         TodoCardCompleteDirective,
