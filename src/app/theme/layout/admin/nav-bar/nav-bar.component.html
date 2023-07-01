@@ -4,9 +4,8 @@
 <ng-template #mainHeader>
     <div class="m-header">
         <a href="javascript:" class="mobile-menu" id="mobile-collapse" (click)="navCollapse()"><span></span></a>
-        <a [routerLink]="['/dashboard/analytics']" class="b-brand">
+        <a [routerLink]="['/home']" class="b-brand">
             Clean Now
-            <img src="assets/images/logo-icon.png" alt="" class="logo-thumb" />
         </a>
         <a class="mob-toggler" [ngClass]="{ on: this.menuClass }" href="javascript:" (click)="toggleMobOption()"
             ><i class="feather icon-more-vertical"></i

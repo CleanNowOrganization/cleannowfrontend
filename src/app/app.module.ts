@@ -24,12 +24,15 @@ import { ToggleFullScreenDirective } from './theme/shared/full-screen/toggle-ful
 /* Menu Items */
 import { NgbButtonsModule, NgbDropdownModule, NgbNavModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavigationItem } from './theme/layout/admin/navigation/navigation';
+import { LandingPageComponent } from './theme/layout/landing-page/landing-page.component';
+import { NavBarComponent as LandingNavbarComponent } from './theme/layout/landing-page/nav-bar/nav-bar.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         AdminComponent,
         AuthComponent,
+        LandingNavbarComponent,
         NavigationComponent,
         NavContentComponent,
         NavGroupComponent,
@@ -41,6 +44,7 @@ import { NavigationItem } from './theme/layout/admin/navigation/navigation';
         NavRightComponent,
         ConfigurationComponent,
         ToggleFullScreenDirective,
+        LandingPageComponent,
     ],
     imports: [
         BrowserModule,
