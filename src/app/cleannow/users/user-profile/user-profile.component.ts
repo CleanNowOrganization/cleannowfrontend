@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { IAlbum, IEvent, Lightbox, LIGHTBOX_EVENT, LightboxConfig, LightboxEvent } from 'ngx-lightbox';
-import { Subscription } from 'rxjs';
 import { DomSanitizer } from '@angular/platform-browser';
+import { IAlbum, IEvent, LIGHTBOX_EVENT, Lightbox, LightboxConfig, LightboxEvent } from 'ngx-lightbox';
+import { Subscription } from 'rxjs';
 
 @Component({
     selector: 'app-user-profile',
@@ -34,7 +34,11 @@ export class UserProfileComponent implements OnInit {
             detalle: 'Compra de producto',
             monto: '200.00'
         },
-        // Agrega más transacciones de prueba como quieras
+        {
+            fecha: '2023-07-01',
+            detalle: 'Compra de producto',
+            monto: '250.00'
+        },
     ];
 
     constructor(
