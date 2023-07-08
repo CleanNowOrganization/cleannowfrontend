@@ -26,6 +26,7 @@ import { NgbButtonsModule, NgbDropdownModule, NgbNavModule, NgbTooltipModule } f
 import { NavigationItem } from './theme/layout/admin/navigation/navigation';
 import { LandingPageComponent } from './theme/layout/landing-page/landing-page.component';
 import { NavBarComponent as LandingNavbarComponent } from './theme/layout/landing-page/nav-bar/nav-bar.component';
+import { PagosComponent } from './pagos/pagos.component';
 
 @NgModule({
     declarations: [
@@ -45,6 +46,7 @@ import { NavBarComponent as LandingNavbarComponent } from './theme/layout/landin
         ConfigurationComponent,
         ToggleFullScreenDirective,
         LandingPageComponent,
+        PagosComponent,
     ],
     imports: [
         BrowserModule,
