@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { ErrorComponent } from './cleannow/pages/error/error.component';
+import { PagosComponent } from './pagos/pagos.component';
 import { AdminComponent } from './theme/layout/admin/admin.component';
 import { LandingPageComponent } from './theme/layout/landing-page/landing-page.component';
-import { ErrorComponent } from './cleannow/pages/error/error.component';
 
 const routes: Routes = [
     {
@@ -17,6 +18,8 @@ const routes: Routes = [
                 path: 'login',
                 loadChildren: () => import('./cleannow/pages/signin/signin.module').then((module) => module.SigninModule)
             },
+            { path: 'pagos', component: PagosComponent }
+];
         ]
     },
     {
