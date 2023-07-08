@@ -35,7 +35,7 @@ export class UserProfileComponent implements OnInit {
             monto: '200.00'
         },
         {
-            fecha: '2023-07-01',
+            fecha: '2023-07-02',
             detalle: 'Compra de producto',
             monto: '250.00'
         },
