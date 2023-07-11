@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { IAlbum, IEvent, LIGHTBOX_EVENT, Lightbox, LightboxConfig, LightboxEvent } from 'ngx-lightbox';
 import { Subscription } from 'rxjs';
@@ -9,6 +9,8 @@ import { Subscription } from 'rxjs';
     styleUrls: ['./user-profile.component.scss']
 })
 export class UserProfileComponent implements OnInit {
+    @Input() userData: any;
+    
     public activeTab: string;
 
     public editProfile: boolean;
