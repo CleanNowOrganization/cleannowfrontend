@@ -1,10 +1,19 @@
 <div class="landing-page-container">
-    <div class="hero-section">
+    <div class="hero-section" style="text-align: center;">
         <h1>Bienvenido a nuestra plataforma de limpieza</h1>
         <p>Ofrecemos los mejores servicios de limpieza en la ciudad.</p>
     </div>
-    <app-card cardTitle="CONOCE A CLEAN NOW">
+    <div class="container">
+        <h2>Empezamos</h2>
+        
+          <label for="direccion">Dirección:</label>
+          <input type="text" id="direccion" />
+        </div>
+        <button class="button" style="color:blue;" onclick="agregarDireccion()">Agregar</button>
+    </div>
+    <app-card cardTitle="NOSOTROS SOMOS CLEAN NOW">
         <p class="p-t-20">
+        <h1>MISION</h1>
             La misión de Clean Now es brindar servicios de limpieza de alta calidad y confiables en Trujillo,
             asegurando la satisfacción total de nuestros clientes. Nos comprometemos a mantener estándares
             excepcionales en cada trabajo, enfocándonos en la atención meticulosa al detalle y la eficiencia en
