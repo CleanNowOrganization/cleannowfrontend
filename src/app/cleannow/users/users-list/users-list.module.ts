@@ -1,10 +1,10 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
+import { DataTablesModule } from 'angular-datatables';
+import { SharedModule } from '../../../theme/shared/shared.module';
 import { UsersListRoutingModule } from './users-list-routing.module';
 import { UsersListComponent } from './users-list.component';
-import { SharedModule } from '../../../theme/shared/shared.module';
-import { DataTablesModule } from 'angular-datatables';
 
 @NgModule({
     declarations: [UsersListComponent],
