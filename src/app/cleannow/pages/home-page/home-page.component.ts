@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { UserService } from '../../../user.service';
 
 @Component({
     selector: 'app-home-page',
@@ -8,15 +7,8 @@ import { UserService } from '../../../user.service';
 })
 
 export class HomePageComponent implements OnInit {
-    data: any; 
 
-    constructor(private userService: UserService) { }
+    constructor() { }
 
-    ngOnInit() {
-        this.userService.getUserData().subscribe(data => {
-            // Ahora tienes los datos del usuario en 'data'
-            this.data = data;
-            console.log("Home page data: "+data);
-          });
-    }
+    ngOnInit() {}
 }

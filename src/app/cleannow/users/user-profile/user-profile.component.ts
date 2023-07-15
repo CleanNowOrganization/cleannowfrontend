@@ -1,7 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { DomSanitizer } from '@angular/platform-browser';
 import { IAlbum, IEvent, LIGHTBOX_EVENT, Lightbox, LightboxConfig, LightboxEvent } from 'ngx-lightbox';
 import { Subscription } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
+import { UserService } from '../../../user.service';
+import { AuthService } from '../../../auth.service';
 
 @Component({
     selector: 'app-user-profile',
@@ -9,7 +13,8 @@ import { Subscription } from 'rxjs';
     styleUrls: ['./user-profile.component.scss']
 })
 export class UserProfileComponent implements OnInit {
-    @Input() userData: any;
+    userData: any;
+    apiData: any;
     
     public activeTab: string;
 
@@ -47,7 +52,10 @@ export class UserProfileComponent implements OnInit {
         private lightbox: Lightbox,
         private lightboxEvent: LightboxEvent,
         private lighboxConfig: LightboxConfig,
-        private sanitizer: DomSanitizer
+        private sanitizer: DomSanitizer,
+        private userService: UserService,
+        private authService: AuthService,
+        private http: HttpClient
     ) {
         this.activeTab = 'profile';
 
@@ -73,7 +81,21 @@ export class UserProfileComponent implements OnInit {
         lighboxConfig.fadeDuration = 1;
     }
 
-    ngOnInit() {}
+    ngOnInit() {
+        this.userService.getUserData().subscribe(data => {
+            this.userData = data;
+
+            this.authService.getTokenSync().pipe(
+                switchMap(token => {
+                        const headers = { 'Authorization': 'Bearer ' + token };
+                        return this.http.get(`http://localhost:8090/consumidores/direccion/${data.dni}`, { headers: headers });
+                    })
+                    ).subscribe(directionData => {
+                this.apiData = directionData;
+                console.log(this.apiData);
+            });
+        });
+    }
 
     public getSantizeUrl(url: string) {
         return this.sanitizer.bypassSecurityTrustUrl(url);

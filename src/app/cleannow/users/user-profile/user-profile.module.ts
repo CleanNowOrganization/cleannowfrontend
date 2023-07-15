@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 import { UserProfileRoutingModule } from './user-profile-routing.module';
 import { UserProfileComponent } from './user-profile.component';
@@ -16,7 +17,8 @@ import { LightboxModule } from 'ngx-lightbox';
         NgbDropdownModule,
         NgbTooltipModule,
         NgbCarouselModule,
-        LightboxModule
+        LightboxModule,
+        HttpClientModule
     ],
     exports: [UserProfileComponent] // asegúrate de que estás exportando UserProfileComponent aquí
 })
