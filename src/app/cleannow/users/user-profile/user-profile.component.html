@@ -45,7 +45,7 @@
                             </div>
                         </div>
                     </div>
-                    <h5 class="mb-1">Lary Doe</h5>
+                    <h5 *ngIf="userData" class="mb-1">{{ userData.name }}</h5>
                     <p class="mb-2 text-muted">UI/UX Designer</p>
                 </div>
                 <div class="col-md-8 mt-md-4">
@@ -55,8 +55,8 @@
                                 ><i class="feather icon-globe mr-2 f-18"></i>www.codedthemes.com</a
                             >
                             <div class="clearfix"></div>
-                            <a href="mailto:demo@domain.com" class="mb-1 text-muted d-flex align-items-end text-h-primary"
-                                ><i class="feather icon-mail mr-2 f-18"></i>demo@domain.com</a
+                            <a *ngIf="userData" href="mailto:demo@domain.com" class="mb-1 text-muted d-flex align-items-end text-h-primary"
+                                ><i class="feather icon-mail mr-2 f-18"></i>{{ userData.email }}</a
                             >
                             <div class="clearfix"></div>
                             <a href="javascript:" class="mb-1 text-muted d-flex align-items-end text-h-primary"
