@@ -1,25 +1,26 @@
+
 <div class="auth-wrapper">
     <div class="auth-content">
+
         <div class="card">
             <div class="row align-items-center text-center">
                 <div class="col-md-12">
-                    <div class="card-body">                    
-                        <h4 class="mb-3 f-w-400">Signin</h4>
-                        <form (submit)="signIn($event)">
-                            <div class="form-group mb-3">
-                                <input type="email" [(ngModel)]="email" name="email" class="form-control" placeholder="Email address" required/>
-                            </div>
-                            <div class="form-group mb-4">
-                                <input type="password" [(ngModel)]="password" name="password" class="form-control" placeholder="Password" required/>
-                            </div>
-                            <div class="custom-control custom-checkbox text-left mb-4 mt-2">
-                                <input type="checkbox" class="custom-control-input" name="customCheck1" />
-                                <label class="custom-control-label" for="customCheck1">Save credentials.</label>
-                            </div>
-                            <button class="btn btn-block btn-primary mb-4">Signin</button>
-                        </form>
-                        <p class="mb-2 text-muted">Forgot password? <a [routerLink]="['/auth/reset-password']" class="f-w-400">Reset</a></p>
-                        <p class="mb-0 text-muted">Don’t have an account? <a [routerLink]="['/auth/signup']" class="f-w-400">Signup</a></p>
+                    <div class="card-body"> 
+                        <h1 class="mb-3 f-w-400" style="color:black;">Clean Now</h1>                  
+                        <h4 class="mb-3 f-w-400">Iniciar Sesion </h4>
+                        <div class="form-group mb-3">
+                            <input type="email" id="email" class="form-control" placeholder="Correo Electronico" />
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="password" id="password" class="form-control" placeholder="Contraseña" />
+                        </div>
+                        <div class="custom-control custom-checkbox text-left mb-4 mt-2">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1" />
+                            <label class="custom-control-label" for="customCheck1">Guardar Contraseña</label>
+                        </div>
+                        <button class="btn btn-block btn-primary mb-4">Signin</button>
+                        <p class="mb-2 text-muted">¿Olvidaste la contraseña? <a [routerLink]="['/auth/reset-password']" class="f-w-400">Reset</a></p>
+                        <p class="mb-0 text-muted">¿No tienes una cuenta?<a [routerLink]="['/auth/signup']" class="f-w-400">Signup</a></p>
                     </div>
                 </div>
             </div>
